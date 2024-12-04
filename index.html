@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibliothèque de projet</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link rel="icon" href="téléchargement.jpg" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Bibliothèque de projet</h1>
+    </header>
+    <br /><br /><br /><br />
+    <a href="#" data-section="description" class="btn-detail"
+      ><button class="btn" id="detail">Voir la description</button></a
+    >
+    <br /><br /><br /><br />
+    <section id="description" class="hidden">
+      <aside>
+        <p>Cette application est une bibliothèque de tous mes projets web</p>
+        <p>
+          Sur cette app, vous aurrez accès à mes projets étudiants mais aussi
+          ceux fait pour mon loisir
+        </p>
+      </aside>
+    </section>
+    <br /><br /><br /><br /><br />
+    <section>
+      <button class="btn" onclick="toggleTable('perso')">
+        Projets Personnels
+      </button>
+      <button class="btn" onclick="toggleTable('pro')">
+        Projets Étudiants
+      </button>
+    </section>
+
+    <table
+      id="projectTable"
+      class="hidden"
+      border="solid 0px"
+      style="width: 100%; text-align: center; margin-top: 20px"
+    >
+      <thead>
+        <tr>
+          <th>Nom du Projet</th>
+          <th>Type</th>
+          <th>Lien</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Les projets seront injectés ici -->
+      </tbody>
+    </table>
+    <br /><br /><br />
+
+    <footer>
+      <p>
+        Contactez le développeur :
+        <a href="mailto:maelgruandcompany@gmail.com">Mael Gruand</a>
+      </p>
+    </footer>
+  </body>
+</html>

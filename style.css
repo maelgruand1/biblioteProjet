@@ -1,0 +1,161 @@
+/* Futurisation globale */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #1e3c72);
+  background-size: 300% 300%;
+  animation: backgroundAnimation 10s infinite alternate;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+
+/* Animation pour l'arrière-plan */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Header futuriste */
+header {
+  border-radius: 50px;
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 30px;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.title:hover {
+  text-shadow: 0 0 15px #f9d423, 0 0 25px #ff4e50;
+}
+
+/* Boutons futuristes */
+.btn {
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Zones de contenu */
+section#description aside,
+#seeProjet {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px auto;
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Liens futuristes */
+a.linkProj {
+  color: #f9d423;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+a.linkProj:hover {
+  color: #ff4e50;
+  text-shadow: 0 0 10px #ff4e50, 0 0 20px #f9d423;
+}
+
+/* Pied de page */
+footer {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+/* Ajout d'animations futuristes */
+.hidden {
+  display: none;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.hidden.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+.hidden {
+  display: none;
+}
+
+table {
+  margin: 0 auto;
+  border: solid 0px;
+  border-radius: 500px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-image: linear-gradient(to left, black, grey);
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  color: white;
+}
+
+button:hover {
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+a {
+  color: white;
+}
+a:hover {
+  color: red;
+}
